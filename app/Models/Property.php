@@ -28,5 +28,11 @@ class Property extends Model
         return Number::currency($this->price/$this->sq_ft);
     }
 
+    public function reviews()
+    {
+    return $this->hasMany(Review::class, 'property_id');
+    }
+
+
 
 }

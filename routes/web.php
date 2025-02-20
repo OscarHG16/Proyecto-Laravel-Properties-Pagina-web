@@ -38,5 +38,5 @@ Route::get('/properties/{property_listing_type_id}', [HomeLandController::class,
 Route::get('/about', [HomeLandController::class, 'about'])->name('about');
 Route::get('/contact', [HomeLandController::class, 'contact'])->name('contact');
 Route::get('/login', [HomeLandController::class, 'login'])->name('login');
-
-
+Route::get('/register',[HomeLandController::class, 'register'])->name('register');
+Route::post('/contact', [HomeLandController::class, 'sendContactMessage'])->name('contact.send');

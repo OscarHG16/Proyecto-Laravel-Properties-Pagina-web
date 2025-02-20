@@ -1,52 +1,14 @@
 @extends('layouts.homeland')
 
 @section('content')
-    <div class="site-section site-section-sm pb-0">
-        <div class="container">
-            <div class="row">
-                <form class="form-search col-md-12" style="margin-top: -100px;">
-                    <div class="row  align-items-end">
-                        <div class="col-md-3">
-                            <label for="list-types">Listing Types</label>
-                            <div class="select-wrap">
-                                <span class="icon icon-arrow_drop_down"></span>
-                                <select name="list-types" id="list-types" class="form-control d-block rounded-0">
-                                    <option value="">Condo</option>
-                                    <option value="">Commercial Building</option>
-                                    <option value="">Land Property</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="offer-types">Offer Type</label>
-                            <div class="select-wrap">
-                                <span class="icon icon-arrow_drop_down"></span>
-                                <select name="offer-types" id="offer-types" class="form-control d-block rounded-0">
-                                    <option value="">For Sale</option>
-                                    <option value="">For Rent</option>
-                                    <option value="">For Lease</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <label for="select-city">Select City</label>
-                            <div class="select-wrap">
-                                <span class="icon icon-arrow_drop_down"></span>
-                                <select name="select-city" id="select-city" class="form-control d-block rounded-0">
-                                    <option value="">New York</option>
-                                    <option value="">Brooklyn</option>
-                                    <option value="">London</option>
-                                    <option value="">Japan</option>
-                                    <option value="">Philippines</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <input type="submit" class="btn btn-success text-white btn-block rounded-0" value="Search">
-                        </div>
-                    </div>
-                </form>
-            </div>
+<div class="site-section site-section-sm pb-0">
+    <div class="container">
+        <div class="row">
+            <!-- FORMULARIO PARA FILTRAR -->
+            @include('layouts.filters')
+        </div>
+    </div>
+</div>
 
             <div class="row">
                 <div class="col-md-12">
@@ -174,47 +136,6 @@
             </div>
         </div>
     </div>
-
-    <!-- <div class="site-section bg-light">
-        <div class="container">
-          <div class="row justify-content-center mb-5">
-            <div class="col-md-7 text-center">
-              <div class="site-section-title">
-                <h2>Recent Blog</h2>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis maiores quisquam saepe architecto error corporis aliquam. Cum ipsam a consectetur aut sunt sint animi, pariatur corporis, eaque, deleniti cupiditate officia.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
-              <a href="#"><img src="images/img_4.jpg" alt="Image" class="img-fluid"></a>
-              <div class="p-4 bg-white">
-                <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-                <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
-              <a href="#"><img src="images/img_2.jpg" alt="Image" class="img-fluid"></a>
-              <div class="p-4 bg-white">
-                <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-                <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="300">
-              <a href="#"><img src="images/img_3.jpg" alt="Image" class="img-fluid"></a>
-              <div class="p-4 bg-white">
-                <span class="d-block text-secondary small text-uppercase">Jan 20th, 2019</span>
-                <h2 class="h5 text-black mb-3"><a href="#">Art Gossip by Mike Charles</a></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias enim, ipsa exercitationem veniam quae sunt.</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div> -->
 
 
     <div class="site-section bg-light">
